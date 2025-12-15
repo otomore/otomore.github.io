@@ -4,10 +4,13 @@ languageCode = "en-us"
 enableRobotsTXT = true
 disableKinds=["RSS"]
 googleAnalytics = "UA-123-45"
-publishDir = "docs"
+# publishDir removed - using default "public" for GitHub Actions
 
-[blackfriday]
-    hrefTargetBlank = true
+# Markup settings (Hugo 0.60+)
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true  # Allow raw HTML in markdown
 
 [params]
   description = '<!--[-->Otomore is a Developer based in Tokyo.<!--]--><br />
