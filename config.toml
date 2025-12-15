@@ -13,8 +13,7 @@ googleAnalytics = "UA-123-45"
       unsafe = true  # Allow raw HTML in markdown
 
 [params]
-  description = '<!--[-->Otomore is a Developer based in Tokyo.<!--]--><br />
-                 <!--[-->It&rsquo;s a specification, not a bug.<!--]-->'
+  description = "<!--[-->Otomore is a Developer based in Tokyo.<!--]--><br /><!--[-->It&rsquo;s a specification, not a bug.<!--]-->"
   logo = "fa-volume-up"
   copyright = "Otomore"
   Twitter = "@otomroe01"
