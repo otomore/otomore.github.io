@@ -21,8 +21,8 @@
             </div>
             <nav>
               <ul>
-                {{ range .Data.Pages.ByWeight }}
-                  <li>{{ if isset .Params "link" }}<a href="{{ index .Params "link" }}"{{else}}<a href="#{{ .File.TranslationBaseName }}"{{end}}>{{ if .GetParam "menuname" }}{{ .GetParam "menuname" }}{{ else }}{{ .Title }}{{ end }}</a></li>
+                {{ range .Site.RegularPages.ByWeight }}
+                  <li>{{ if isset .Params "link" }}<a href="{{ index .Params "link" }}"{{else}}<a href="#{{ .File.TranslationBaseName }}"{{end}}>{{ if .Param "menuname" }}{{ .Param "menuname" }}{{ else }}{{ .Title }}{{ end }}</a></li>
                 {{ end }}
               </ul>
             </nav>
@@ -30,7 +30,7 @@
 
         <!-- Main -->
           <div id="main">
-            {{ range .Data.Pages }}
+            {{ range .Site.RegularPages }}
               {{ .Render "onepagestyle" }}
             {{ end }}
           </div>
