@@ -1,0 +1,26 @@
+/* Font Awesome 6 compatibility fixes */
+
+/* Override FA4 font-family with FA6 */
+.icon:before {
+    font-family: inherit;
+}
+
+/* Fix logo icon centering */
+#header .logo .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+#header .logo .icon:before {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+}
+
+/* Fix social icons (brands) */
+ul.icons li a.icon:before {
+    font-family: "Font Awesome 6 Brands";
+    font-weight: 400;
+}

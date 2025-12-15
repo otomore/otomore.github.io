@@ -1,0 +1,38 @@
+{{ partial "header.html" . }}
+
+    <!-- Wrapper -->
+      <div id="wrapper">
+
+        <!-- Header -->
+          <header id="header">
+            <div class="logo">
+              {{ with .Site.Params.logoimage }}
+              <img src="{{ . }}" width="100%" style="padding: 10px 10px 10px 10px;">
+            {{ end }}
+            {{ with .Site.Params.logo }}
+              <span class="icon {{ . }}"></span>
+            {{ end }}
+            </div>
+            <div class="content">
+              <div class="inner">
+                <h1>404</h1>
+                <p>Page Not Found</p>
+              </div>
+            </div>
+            <nav>
+              <ul>
+                <li><a href="/">Back to Home</a></li>
+              </ul>
+            </nav>
+          </header>
+
+        <!-- Main -->
+          <div id="main">
+            <article id="404">
+              <h2 class="major">Oops!</h2>
+              <p>The page you're looking for doesn't exist or has been moved.</p>
+              <p>Please check the URL or go back to the <a href="/">homepage</a>.</p>
+            </article>
+          </div>
+
+{{ partial "footer.html" . }}

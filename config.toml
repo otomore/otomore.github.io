@@ -14,7 +14,7 @@ googleAnalytics = "UA-123-45"
 
 [params]
   description = "<!--[-->Otomore is a Developer based in Tokyo.<!--]--><br /><!--[-->It&rsquo;s a specification, not a bug.<!--]-->"
-  logo = "fa-volume-up"
+  logo = "fa-solid fa-volume-high"
   copyright = "Otomore"
   Twitter = "@otomroe01"
 
